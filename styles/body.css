@@ -13,7 +13,7 @@
 }
 .image1{
   height: 500px;
-  width:100%;
+  width: 600px;
 }
 .text1{
   display: flex;
@@ -34,7 +34,7 @@
   font-size: 40px;
   font-weight: bold;
   width: 100%;
-  color: rgb(42, 55, 68);  
+  color:rgb(117, 68, 159);
 }
 .pannel-3{
   display: grid;
@@ -65,13 +65,13 @@
 .card-link{
   text-decoration: none;
   transition: 4s;
-  color:rgb(42, 55, 68);
+  color:rgb(128, 55, 192);
 }
 .footer{
   display: flex;
   flex-direction:row;
-  justify-content: space-between;
-  padding: 20px 150px 20px 100px;
+  justify-content: space-evenly;
+  padding-top: 20px;
   font-weight: bold;
   font-size:15px;
   background-color:#100e1c;
@@ -79,11 +79,40 @@
   height: 250px;  
 }
 .footer-about{
-  width: 200px;
+  width: 300px;
   font-weight:normal;
   font-size: small;
   text-decoration: none;
   color: rgb(201, 198, 198);
 }
+@media (max-width: 600px) {
+  .card {
+   grid-template-rows: 150px 90px;
+  }
+  .card-img {
+    border-radius: 5px;
+    height: 170px;
+  }
+  .card-description{
+    font-size: smaller;
+  }
+  .image1{
+    display:none;
+  }
+  .text1{
+    height: 400px;
+    font-size: medium;
+    text-align: justify;
+    background-color:rgb(134, 99, 164);
+  }  
+  .footer{
+    font-size:10px;
+  }
+  .footer-about{
+    font-size: 10px;
+    width:200px;
+  }
+}
+
 
 

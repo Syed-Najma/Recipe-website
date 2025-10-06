@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-left: 40px;
+  padding-left: 10px;
 }
 .name-text{
  padding-left: 10px;
@@ -64,3 +64,82 @@
   transition: 0.6s;
 }
 
+/*for the mobile view of header*/
+
+ .menu-icon {
+  font-size: 28px;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #ff7043;
+  color: white;
+  display: inline-block;
+  right: 0;
+}
+
+/* Sidebar styling */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position:fixed;
+  top: 45px;
+  left: 0;
+  background-color: #333;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 80px;
+  z-index: 999;
+  
+}
+
+/* Sidebar links */
+.sidebar a {
+  padding: 12px 25px;
+  text-decoration: none;
+  font-size: 10px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #575757;
+}
+
+/* Close button */
+.sidebar .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 20px;
+}
+.mobile-header{
+  display:none;
+}
+
+/* Make sidebar only for small screens */
+@media (max-width: 600px) {
+  .header{
+    display: none;
+  }
+  .mobile-header{
+    display: contents;
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    font-size: 10px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu-icon {
+    right:0;
+  }
+  .sidebar {
+    width: 200px;
+    position: relative;
+    height: auto;
+    padding-top: 0px;
+  }
+  .name-text{
+    color: rgb(117, 68, 159);
+  }
+}

@@ -17,9 +17,46 @@
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
    <script src="https://kit.fontawesome.com/7ef75586e7.js" crossorigin="anonymous"></script>
-
+   
+   <!--mobile header js-->
+   <script src="script.js"></script>
 </head>
 <body>
+
+  <!--for the mobile view of header-->
+
+  <!-- Hamburger Icon -->
+   <div class="mobile-header">
+   <div class="left-section">
+      <div class="icon-image-div">
+        <img class="icon-image" src="pictures/icon.jpg" alt="error">
+      </div>
+      <div class="name-text">
+        <p>
+          <a>Kashmir Recipe Bytes</a>
+        </p>
+      </div>
+    </div>
+
+     <div class="menu-icon" onclick="toggleMenu()">
+     &#9776; <!-- ☰ symbol -->
+     </div>
+    
+  
+   <!-- Sidebar Container -->
+   <div id="sidebar" class="sidebar">
+    <a href="#" class="close-btn" onclick="toggleMenu()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">Recipes</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+   </div>
+  </div>    
+  
+
+<!--header for laptop view-->
+
+
   <div class="header">
     <div class="left-section">
       <div class="icon-image-div">
@@ -92,7 +129,7 @@
           <img class="card-img" src="pictures/yakhni.jpg" alt="error">
         </div>
         <div class="card-description">
-          <a class="card-link" href="#">
+          <a class="card-link" href="yakhni.html">
           <h4>Mutton Yakhni</h4> 
           </a>
         </div>
@@ -103,7 +140,7 @@
           <img class="card-img" src="pictures/pulao.jpg" alt="error">
         </div>
         <div class="card-description">
-          <a class="card-link" href="#">
+          <a class="card-link" href="pulao.html">
           <h4>Kashmiri Pulao</h4> 
           </a>
         </div>
@@ -114,7 +151,7 @@
           <img class="card-img" src="pictures/kabab.jpg" alt="error">
         </div>
         <div class="card-description">
-          <a class="card-link" href="#">
+          <a class="card-link" href="kabab.html">
           <h4>Kabab</h4> 
           </a>
         </div>
@@ -125,7 +162,7 @@
           <img class="card-img" src="pictures/rista.jpg" alt="error">
         </div>
         <div class="card-description">
-          <a class="card-link" href="#">
+          <a class="card-link" href="rista.html">
           <h4>Mutton Rista</h4> 
           </a>
         </div>
@@ -136,7 +173,7 @@
           <img class="card-img" src="pictures/harissa.jpg" alt="error">
         </div>
         <div class="card-description">
-          <a class="card-link" href="#">
+          <a class="card-link" href="harissa.html">
           <h4>Kashmiri Harissa</h4> 
           </a>
         </div>
@@ -147,7 +184,7 @@
           <img class="card-img" src="pictures/aabgosh.jpg" alt="error">
         </div>
         <div class="card-description">
-          <a class="card-link" href="#">
+          <a class="card-link" href="aabgosh.html">
           <h4>Wazwaan Aabgosh</h4> 
           </a>
         </div>
@@ -178,6 +215,5 @@
      </div>
     </div>
   </div>
-
 </body>
 </html>
