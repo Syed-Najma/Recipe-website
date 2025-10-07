@@ -87,11 +87,11 @@
 }
 @media (max-width: 600px) {
   .card {
-   grid-template-rows: 150px 90px;
+   grid-template-rows: 150px 50px;
   }
   .card-img {
     border-radius: 5px;
-    height: 170px;
+    height: 150px;
   }
   .card-description{
     font-size: smaller;
@@ -101,7 +101,7 @@
   }
   .text1{
     height: 400px;
-    font-size: medium;
+    font-size:15px;
     text-align: justify;
     background-color:rgb(134, 99, 164);
   }  
@@ -110,7 +110,7 @@
   }
   .footer-about{
     font-size: 10px;
-    width:200px;
+    width:180px;
   }
 }
 
