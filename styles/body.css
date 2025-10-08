@@ -22,7 +22,7 @@
   height: 500px;
   width: 600px;
   background-color:rgb(105, 168, 193);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   text-align: justify;
   padding-left: 30px;
@@ -107,10 +107,11 @@
   }  
   .footer{
     font-size:10px;
+    justify-content: space-evenly;
   }
   .footer-about{
     font-size: 10px;
-    width:180px;
+    width:200px;
   }
 }
 
